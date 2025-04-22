@@ -27,7 +27,7 @@ export default function Home({ posts }) {
                 <article>
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
-                      <dt className="sr-only">Published on</dt>
+                      <dt className="sr-only">Yayınlanma Tarihi</dt>
                       <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                       </dd>
@@ -57,9 +57,9 @@ export default function Home({ posts }) {
                         <Link
                           href={`/blog/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read more: "${title}"`}
+                          aria-label={`devamını oku: "${title}"`}
                         >
-                          Read more &rarr;
+                          Devamını oku &rarr;
                         </Link>
                       </div>
                     </div>
@@ -75,9 +75,9 @@ export default function Home({ posts }) {
           <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="All posts"
+            aria-label="bütün postlar"
           >
-            All Posts &rarr;
+            Bütün Postlar &rarr;
           </Link>
         </div>
       )}
