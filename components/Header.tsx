@@ -41,6 +41,12 @@ const Header = () => {
                 {link.title}
               </Link>
             ))}
+              <a
+                href={"https://photos-emre-kozan.vercel.app/"}
+                className="hover:text-primary-500 dark:hover:text-primary-400 m-1 font-medium text-gray-900 dark:text-gray-100"
+              >
+                Photo Blog
+              </a>
         </div>
         <SearchButton />
         <ThemeSwitch />
